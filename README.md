@@ -1,3 +1,5 @@
+# This is a fork of [redyf/Neve](https://gitub.com/redyf/Neve) for personal use
+
 <h1 align="center">
 <a href='#'><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="600px"/></a>
   <br>
