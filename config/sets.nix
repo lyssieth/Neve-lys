@@ -117,7 +117,16 @@
       local opt = vim.opt
       local g = vim.g
       local o = vim.o
-        -- Neovide
+      -- fix cursor after exiting
+      local group_id = vim.api.nvim_create_augroup("lys-extras", { clear = true })
+
+      vim.api.nvim_create_autocmd("VimLeave", {
+        group = group_id,
+        desc = "Fix for line cursor not being kept after exiting",
+        command = "set guicursor=a:ver2-blinkon500",
+      })
+
+      -- Neovide
       if g.neovide then
         -- Neovide options
         g.neovide_fullscreen = false
