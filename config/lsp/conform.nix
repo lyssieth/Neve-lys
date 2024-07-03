@@ -16,7 +16,7 @@
       markdown = [["prettierd" "prettier"]];
       rust = ["rustfmt"];
       json = [["prettierd" "prettier"]];
-      csharp = ["omnisharp"];
+      cs = ["omnisharp"];
     };
   };
 

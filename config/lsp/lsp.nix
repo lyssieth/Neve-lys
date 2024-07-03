@@ -61,7 +61,6 @@
 
         omnisharp = {
           enable = true;
-          filetypes = ["csharp"];
 
           settings = {
             enableEditorConfigSupport = true;
