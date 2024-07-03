@@ -59,6 +59,19 @@
         pyright = {enable = true;};
         ruff-lsp = {enable = true;};
 
+        omnisharp = {
+          enable = true;
+          filetypes = ["csharp"];
+
+          settings = {
+            enableEditorConfigSupport = true;
+            enableImportCompletion = true;
+            enableRoslynAnalyzers = true;
+            analyzeOpenDocumentsOnly = false;
+            organizeImportsOnFormat = true;
+          };
+        };
+
         rust-analyzer = {
           enable = true;
           installCargo = true;
