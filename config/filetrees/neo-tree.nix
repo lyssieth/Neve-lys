@@ -1,6 +1,6 @@
 {
   plugins.neo-tree = {
-    enable = false;
+    enable = true;
     enableDiagnostics = true;
     enableGitStatus = true;
     enableModifiedMarkers = true;
@@ -23,4 +23,16 @@
     };
     filesystem.filteredItems.visible = true;
   };
+
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>e";
+      action = ":Neotree toggle<CR>";
+      options = {
+        desc = "Toggle Explorer";
+        silent = true;
+      };
+    }
+  ];
 }
