@@ -30,6 +30,7 @@
     ./languages/treesitter/treesitter-textobjects.nix
     ./languages/treesitter/ts-autotag.nix
     ./languages/treesitter/ts-context-commentstring.nix
+    ./languages/rust-extras.nix
 
     ./lsp/conform.nix
     ./lsp/fidget.nix
