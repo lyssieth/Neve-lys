@@ -6,11 +6,12 @@
     enableModifiedMarkers = true;
     enableRefreshOnWrite = true;
     closeIfLastWindow = true;
-    popupBorderStyle = "rounded"; # Type: null or one of “NC”, “double”, “none”, “rounded”, “shadow”, “single”, “solid” or raw lua code
+    popupBorderStyle = "rounded";
     buffers = {
       bindToCwd = false;
       followCurrentFile = {
         enabled = true;
+        leaveDirsOpen = false;
       };
     };
     window = {
@@ -21,14 +22,17 @@
         "<space>" = "none";
       };
     };
-    filesystem.filteredItems.visible = true;
+    filesystem.filteredItems = {
+      visible = true;
+    };
+    sourceSelector.winbar = true;
   };
 
   keymaps = [
     {
       mode = "n";
       key = "<leader>e";
-      action = ":Neotree toggle<CR>";
+      action = ":Neotree toggle reveal<CR>";
       options = {
         desc = "Toggle Explorer";
         silent = true;
