@@ -6,6 +6,11 @@
       delete_to_trash = true;
       view_options = {
         show_hidden = true;
+        is_always_hidden = ''
+          function(name, bufnr)
+            return name:match("^.git") or name:match("node_modules") or name:match("target") or name:match("^.direnv") or name:match("^.svelte\\-kit")
+          end
+        '';
       };
       preview = {
         border = "rounded";
