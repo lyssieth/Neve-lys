@@ -56,6 +56,7 @@
             };
           };
         };
+        svelte = {enable = true;};
         eslint = {enable = true;};
         pyright = {enable = true;};
         ruff-lsp = {enable = true;};
@@ -81,12 +82,6 @@
             check = {
               command = "clippy";
             };
-            # inlayHints = {
-            #   enable = true;
-            #   showParameterNames = true;
-            #   parameterHintsPrefix = "<- ";
-            #   otherHintsPrefix = "=> ";
-            # };
             procMacro = {
               enable = true;
             };
