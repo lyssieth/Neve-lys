@@ -24,6 +24,7 @@
     };
     filesystem.filteredItems = {
       visible = true;
+      neverShow = [".git" ".svelte-kit" ".direnv" "target" "node_modules"];
     };
     sourceSelector.winbar = true;
   };
