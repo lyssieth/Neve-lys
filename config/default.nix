@@ -40,6 +40,8 @@
 
     ./none-ls/none-ls.nix
 
+    ./pluginmanagers/lazy.nix
+
     ./snippets/luasnip.nix
 
     ./statusline/lualine.nix
@@ -56,7 +58,6 @@
 
     ./utils/better-escape.nix
     # ./utils/neocord.nix # Neocord doesn't make sense for me
-    ./utils/flash.nix
     ./utils/hardtime.nix
     ./utils/harpoon.nix
     ./utils/illuminate.nix
@@ -77,7 +78,6 @@
     ./utils/toggleterm.nix
     ./utils/ultimate-autopair.nix
     ./utils/undotree.nix
-    ./utils/vim-be-good.nix
     ./utils/wakatime.nix
     ./utils/whichkey.nix
     ./utils/wilder.nix

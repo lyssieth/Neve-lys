@@ -5,7 +5,7 @@
       use_default_keymaps = true;
       delete_to_trash = true;
       view_options = {
-        show_hidden = true;
+        showHidden = true;
         is_always_hidden = ''
           function(name, bufnr)
             return name:match("^.git") or name:match("node_modules") or name:match("target") or name:match("^.direnv") or name:match("^.svelte\\-kit")
@@ -18,10 +18,10 @@
 
       float = {
         padding = 2;
-        max_width = 0; # ''math.ceil(vim.o.lines * 0.8 - 4)'';
-        max_height = 0; # ''math.ceil(vim.o.columns * 0.8)'';
+        maxWidth = 0; # ''math.ceil(vim.o.lines * 0.8 - 4)'';
+        maxHeight = 0; # ''math.ceil(vim.o.columns * 0.8)'';
         border = "rounded"; # 'single' | 'double' | 'shadow' | 'curved' | ... other options supported by win open
-        win_options = {
+        winOptions = {
           winblend = 0;
         };
       };

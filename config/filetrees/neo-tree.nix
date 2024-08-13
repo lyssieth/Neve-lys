@@ -6,12 +6,12 @@
     enableModifiedMarkers = true;
     enableRefreshOnWrite = true;
     closeIfLastWindow = true;
+
     popupBorderStyle = "rounded";
     buffers = {
       bindToCwd = false;
       followCurrentFile = {
         enabled = true;
-        leaveDirsOpen = false;
       };
     };
     window = {

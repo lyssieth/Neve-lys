@@ -1,8 +1,6 @@
 {pkgs, ...}: {
   plugins.treesitter = {
     enable = true;
-    folding = true;
-    nixvimInjections = true;
 
     grammarPackages = with pkgs;
       [
@@ -15,5 +13,7 @@
       highlight.enable = true;
       indent.enable = true;
     };
+    folding = true;
+    nixvimInjections = true;
   };
 }

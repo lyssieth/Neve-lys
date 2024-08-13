@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{
   plugins.crates-nvim = {
     enable = true;
 

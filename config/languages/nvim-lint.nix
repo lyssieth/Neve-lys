@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{
   plugins.lint = {
     enable = true;
     lintersByFt = {
@@ -9,16 +9,6 @@
       javascriptreact = ["eslint_d"];
       typescript = ["eslint_d"];
       typescriptreact = ["eslint_d"];
-      json = ["jsonlint"];
-      java = ["checkstyle"];
-    };
-
-    linters = {
-      jsonlint = {
-        cmd = "${pkgs.nodePackages.jsonlint}/bin/jsonlint";
-        stdin = true;
-        append_fname = true;
-      };
     };
   };
 }

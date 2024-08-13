@@ -2,16 +2,18 @@
   # TODO: Implement general mappings
   plugins.which-key = {
     enable = true;
-    # ignoreMissing = false;
-    icons = {
-      breadcrumb = "»";
-      group = "+";
-      separator = ""; # ➜
-    };
+    settings = {
+      icons = {
+        breadcrumb = "»";
+        group = "+";
+        separator = ""; # ➜
+      };
 
-    window = {
-      border = "none";
-      winblend = 0;
+      win = {
+        border = "none";
+
+        wo.winblend = 0;
+      };
     };
 
     # preset = "modern";
