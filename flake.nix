@@ -2,6 +2,7 @@
   description = "Neve is a Neovim configuration built with Nixvim, which allows you to use Nix language to manage Neovim plugins/options";
 
   inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     nixvim.url = "github:nix-community/nixvim";
     flake-utils.url = "github:numtide/flake-utils";
   };
@@ -12,7 +13,7 @@
     nixvim,
     flake-utils,
     ...
-  } @ inputs: let
+  }: let
     config = import ./config; # import the module directly
   in
     flake-utils.lib.eachDefaultSystem (system: let
