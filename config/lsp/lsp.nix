@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   plugins = {
     lsp-format = {
       enable = false; # Enable it if you want lsp-format integration for none-ls
@@ -59,7 +59,10 @@
         svelte = {enable = true;};
         eslint = {enable = true;};
         pyright = {enable = true;};
-        ruff-lsp = {enable = true;};
+        ruff = {
+          enable = true;
+          package = pkgs.ruff;
+        };
 
         omnisharp = {
           enable = true;
