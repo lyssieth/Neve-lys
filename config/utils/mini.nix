@@ -9,7 +9,9 @@
           '';
         };
       };
+      icons = {};
       cursorword = {};
     };
+    mockDevIcons = true;
   };
 }

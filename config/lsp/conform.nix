@@ -1,22 +1,24 @@
 {
   plugins.conform-nvim = {
     enable = true;
-    notifyOnError = true;
-    formattersByFt = {
-      html = [["prettierd" "prettier"]];
-      css = [["prettierd" "prettier"]];
-      javascript = [["prettierd" "prettier"]];
-      javascriptreact = [["prettierd" "prettier"]];
-      typescript = [["prettierd" "prettier"]];
-      typescriptreact = [["prettierd" "prettier"]];
-      java = ["google-java-format"];
-      python = ["black"];
-      lua = ["stylua"];
-      nix = ["alejandra"];
-      markdown = [["prettierd" "prettier"]];
-      rust = ["rustfmt"];
-      json = [["prettierd" "prettier"]];
-      cs = ["omnisharp"];
+    settings = {
+      notify_on_error = true;
+      formatters_by_ft = {
+        html = [["prettierd" "prettier"]];
+        css = [["prettierd" "prettier"]];
+        javascript = [["prettierd" "prettier"]];
+        javascriptreact = [["prettierd" "prettier"]];
+        typescript = [["prettierd" "prettier"]];
+        typescriptreact = [["prettierd" "prettier"]];
+        java = ["google-java-format"];
+        python = ["black"];
+        lua = ["stylua"];
+        nix = ["alejandra"];
+        markdown = [["prettierd" "prettier"]];
+        rust = ["rustfmt"];
+        json = [["prettierd" "prettier"]];
+        cs = ["omnisharp"];
+      };
     };
   };
 

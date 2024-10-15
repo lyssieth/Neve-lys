@@ -8,7 +8,7 @@
       capabilities = "offsetEncoding =  'utf-16'";
       servers = {
         clangd = {enable = true;};
-        lua-ls = {
+        lua_ls = {
           enable = true;
           extraOptions = {
             settings = {
@@ -24,9 +24,9 @@
             };
           };
         };
-        nil-ls = {enable = true;};
+        nil_ls = {enable = true;};
         nixd = {enable = true;};
-        tsserver = {
+        ts_ls = {
           enable = false;
           filetypes = ["javascript" "javascriptreact" "typescript" "typescriptreact"];
           extraOptions = {
@@ -76,7 +76,7 @@
           };
         };
 
-        rust-analyzer = {
+        rust_analyzer = {
           enable = true;
           installCargo = true;
           installRustc = true;
