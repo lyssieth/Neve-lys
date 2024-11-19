@@ -57,6 +57,7 @@
     ./ui/nui.nix
 
     ./utils/better-escape.nix
+    ./utils/committia.nix
     # ./utils/neocord.nix # Neocord doesn't make sense for me
     ./utils/hardtime.nix
     ./utils/harpoon.nix
