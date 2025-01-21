@@ -1,8 +1,8 @@
 {
-  plugins.crates-nvim = {
+  plugins.crates = {
     enable = true;
 
-    extraOptions.completion.cmp.enabled = true;
+    settings.completion.cmp.enabled = true;
   };
 
   plugins.cmp = {
